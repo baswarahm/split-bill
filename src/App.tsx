@@ -497,6 +497,14 @@ export default function App() {
           </div>
         </section>
       )}
+
+      <footer className="foot">
+        Created by{" "}
+        <a href="https://www.instagram.com/baswara.hm/" target="_blank" rel="noopener noreferrer">
+          @baswara.hm
+        </a>{" "}
+        on Instagram
+      </footer>
     </>
   );
 }

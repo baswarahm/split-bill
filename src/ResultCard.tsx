@@ -95,6 +95,7 @@ export default function ResultCard({ title, currency, people, grandTotal }: Prop
       lines.push("");
     }
     lines.push(`Grand total: ${money(grandTotal)}`);
+    lines.push("", "Split with https://split-bill-azure.vercel.app", "created by @baswara.hm");
     try {
       await navigator.clipboard.writeText(lines.join("\n"));
       flash("Text copied");
@@ -140,6 +141,11 @@ export default function ResultCard({ title, currency, people, grandTotal }: Prop
           <div className="r-grand">
             <span>Grand total</span>
             <span>{money(grandTotal)}</span>
+          </div>
+          <div className="r-dash" />
+          <div className="r-credit">
+            <div>split-bill-azure.vercel.app</div>
+            <div>created by @baswara.hm</div>
           </div>
         </div>
         <Tear id="tear-bottom" />

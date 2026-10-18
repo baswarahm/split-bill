@@ -171,6 +171,9 @@ button, input { font: inherit; color: inherit; }
 .r-muted { color: #777; }
 .r-sum { font-weight: 700; margin-top: 6px; padding-top: 6px; border-top: 1px solid #ddd; }
 .r-grand { display: flex; justify-content: space-between; gap: 12px; font-weight: 700; font-size: 17px; border-top: 4px double #1b1b1b; padding-top: 10px; }
+.r-credit { text-align: center; font-size: 11px; color: #777; line-height: 1.6; }
+.foot { text-align: center; color: var(--muted); font-size: 13px; margin-top: 28px; }
+.foot a { color: var(--brand-ink); font-weight: 700; }
 .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
 .actions .block { grid-column: 1 / -1; }
 .toast {
